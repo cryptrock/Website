@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+ <class name="Login.UserBean" table="Authentication">
+ <id name="user_id" type="long" column="USER_ID"> 
+ <generator class="assigned"/>
+ </id>
+ <property name="user_password" column="USER_PASSWORD" type="string" length="32" not-null="true"/>
+ <property name="user_status" column ="USER_STATUS" type="string" length="30" not-null="true"/>
+ </class>
+</hibernate-mapping>
